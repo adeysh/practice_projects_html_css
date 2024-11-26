@@ -157,6 +157,10 @@ nav {
     transition: 0.2s ease-in-out;
 }
 
+.card a {
+    text-decoration: none;
+}
+
 .card:hover {
     transform: scale(1.05);
     transition: 1s ease-in-out;
@@ -177,7 +181,7 @@ nav {
 .card_content {
     padding: 2rem;
     position: relative;
-    top: -6.5rem;
+    top: -5.6rem;
     margin-bottom: -6.5rem;
     transition: 0.5s ease-in-out;
     transform: translateY(100px);
