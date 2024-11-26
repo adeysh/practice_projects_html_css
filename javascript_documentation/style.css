@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: justify;
+}
+
+.sidebar {
+    height: 100%;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar_heading {
+    padding: 20px 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.sidebar_heading h2 {
+    margin: 0;
+    padding: 0;
+    line-height: 2rem;
+    height: 25px;
+    font-weight: 500;
+}
+
+.sidebar_list_item {
+    padding: 10px;
+    font-size: 15px;
+    border-bottom: 1px solid #ccc;
+    transition: 0.3s ease-in-out;
+}
+
+.sidebar_list_item:hover {
+    transition: 0.2s ease-in-out;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.sidebar_list_item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+}
+
+
+
+.content {
+    border-left: 1px solid #ccc;
+    height: 100%;
+    width: 82%;
+    padding: 60px;
+}
+
+
+.content_heading h4 {
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
+    scroll-margin-top: 60px;
+}
+
+.content_description {
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 1.4rem;
+}
+
+.content_description p {
+    margin: 0;
+    padding-top: 20px;
+}
+
+.content_description ul {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.content_description ul li {
+    margin-bottom: 10px;
+}
+
+.content_block {
+    padding-bottom: 70px;
+
+}
+
+.code_block {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin-left: 10px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+}
+
+/* media query  */
+
+@media only screen and (max-width: 768px) {
+    .sidebar_heading h2 {
+        font-size: 15px;
+        height: 20px;
+        font-weight: 400;
+    }
+
+    .sidebar_list_item {
+        font-size: 15px;
+    }
+
+    .code_block {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .sidebar_heading h2 {
+        font-size: 12px;
+        height: 20px;
+        font-weight: 400;
+    }
+
+    .sidebar_list_item {
+        font-size: 10px;
+    }
+
+    .code_block {
+        font-size: small;
+    }
+
+    .content_block .content_heading h4 {
+        font-size: 15px;
+    }
+
+    .content_block .content_description p {
+        font-size: 12px;
+    }
+
+    .content_description ul {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+        padding: 30px;
+    }
+}
